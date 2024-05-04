@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: black;
+
+}
+
+.main-container {
+    width: 98vw;
+    height: 96vh;
+    letter-spacing: 1px;
+    background-image: url(/image/bitcoin2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 15px;
+    margin-left: 14px;
+    border-radius: 15px;
+ padding: 150px;
+}
+
+.login_form_container {
+    position: relative;
+    width: 450px;
+    
+   
+    height: 550px;
+    /* max-width: 400px;
+    max-height: 470px; */
+    border-radius: 50px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -60px;
+    background-color: #d5af57;
+    margin-left: 50px;
+ 
+  
+
+   
+}
+
+
+.login_form_container::before {
+
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, white);
+    animation: rotate_border 6s linear infinite;
+
+}
+
+.login_form_container::after {
+
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, black);
+    animation: rotate_border 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes rotate_border {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.login_form {
+    position: absolute;
+    content: '';
+    /* background-color: #0c1022; */
+    border-radius: 50px 5px;
+    inset: 5px;
+    padding: 50px 40px;
+    z-index: 10;
+    color: #d5af57;
+    /* background-color: #d5af57; */
+    background-color: black;
+   
+
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.input_group {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.input_text {
+    width: 95%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #d5af57;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #d5af57;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+::placeholder {
+    font-size: 15px;
+    color: #d5af57;
+    letter-spacing: 1px;
+
+
+}
+
+.fa {
+    font-size: 20px;
+
+}
+
+#login_button {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    transition: 1s;
+    margin-top: 70px;
+
+
+}
+
+#login_button a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border: 1px solid #d5af57;
+    border-radius: 50px;
+    background-color: #d5af57;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    align-items: center;
+    font-family: 'Libre Caslon Display', serif;
+
+}
+
+#login_button a:hover {
+    color: #d5af57;
+    background-color: black;
+}
+
+.fotter {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.fotter a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+/* .glowIcon {
+    text-shadow: 0 0 10px #00ccff;
+
+} */

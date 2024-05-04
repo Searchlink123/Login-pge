@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScreenShot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #bd9a48;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .package {
+
+            padding-top: 5rem;
+            height: 350px;
+            width: 350px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: -1rem 0 3rem #000;
+
+
+        }
+
+        .package h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 70px;
+            color: #bd9a48;
+        }
+
+        .package p {
+            font-size: 20px;
+            margin-bottom: 10px;
+            margin-left: 70px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .price{
+            font-size: 20px;
+            margin-bottom: 10px;
+            margin-left: 70px;
+        }
+        .package form{
+            margin-left: 65px;
+          
+        }
+        .package form input{
+            width: 200px;
+            height: 30px;
+            margin: 15px;
+            border-radius: 8px;
+            border: none;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="package">
+            <h2> Basic Plan</h2>
+            <p> Prefect for beginners</p>
+            <div class="price"> $9.99/month</div>
+            <form action="process_upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="ScreenShot" accept=".jpg ,.jpeg,.png" id="abc">
+                <input type="submit" value="Upload ScreenShot">
+            </form>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>
